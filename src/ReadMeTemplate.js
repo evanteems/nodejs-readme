@@ -7,7 +7,7 @@ function ReadMeTemplate(data) {
         
     ## TABLE OF CONTENTS
     - [Description](#description)
-    -[Installation](#install)
+    -[Installation](#installation)
     -[Usage](#usage)
     -[License](#license)
     -[Contribution](#contributing)
