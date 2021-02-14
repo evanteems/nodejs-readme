@@ -5,5 +5,37 @@ function ReadMeTemplate(data) {
     ##DESCRIPTION
         ${data.description}
         
-    `
+    ## TABLE OF CONTENTS
+    - [Description](#description)
+    -[Installation](#install)
+    -[Usage](#usage)
+    -[License](#license)
+    -[Contribution](#contributing)
+    -[Tests](#tests)
+    
+    ## Installation
+        ${data.installation}
+        
+    ## Usage
+        ${data.usage}
+        
+    ## Credit
+        ${data.credits}
+        
+    ## License
+        This application is covered by ${data.license} license.
+        
+    ## Badges
+    
+    ## Features
+        ${data.features}
+        
+    ## Contribution
+    
+    ## Tests
+    
+    
+    `;
 }
+
+module.exports = ReadMeTemplate;
