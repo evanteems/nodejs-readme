@@ -31,9 +31,7 @@ function ReadMeTemplate(data) {
         ${data.features}
         
     ## Contribution
-    
-    ## Tests
-    
+        ${data.contributing}
     
     `;
 }
