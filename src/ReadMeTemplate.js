@@ -2,34 +2,36 @@ function ReadMeTemplate(data) {
     return `
     <h1 align='center'>${data.projectTitle}</h1>
     
-    ## Description
-        ${data.description}
-        
-    ## TABLE OF CONTENTS
+    ## Description 
+      ${data.description}
+    
+    ## Table of Contents
     - [Description](#description)
     - [Installation](#install)
     - [Usage](#usage)
+    - [Credits](#credits)
     - [License](#license)
-    - [Contribution](#contribution)
-    
-    ## Installation
-        ${data.install}
-        
-    ## Usage
-        ${data.usage}
-        
-    ## Credit
-        ${data.credits}
-        
-    ## License
-        This application is covered by ${data.license} license.
-        
-    ## Features
-        ${data.features}
-        
-    ## Contribution
-        ${data.contribution}
-`;
-}
+    - [Features](#features)
+    - [Contributing](#contributing)
 
+    ## Installation
+      ${data.install}
+
+    ## Usage
+      ${data.usage}
+    
+    ## Credits
+      ${data.credits}
+
+    ## License
+      This application is covered by ${data.license} license.
+
+    ## Features
+      ${data.features}
+
+    ## Contributing
+      ${data.contributing}
+  `;
+}
+  
 module.exports = ReadMeTemplate;

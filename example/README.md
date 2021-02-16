@@ -1,30 +1,33 @@
 
     <h1 align='center'>Node.js Readme Generator</h1>
     
-    ## Description
-        Simply creates and displays a README.md file using node.js and JavaScript
-        
-    ## TABLE OF CONTENTS
-    - [Description](#description)
-    -[Installation](#install)
-    -[Usage](#usage)
-    -[License](#license)
-    -[Contribution](#contribution)
+    ## Description 
+      Simply creates and displays a README.md file using Javascript and node.js
     
+    ## Table of Contents
+    - [Description](#description)
+    - [Installation](#install)
+    - [Usage](#usage)
+    - [Credits](#credits)
+    - [License](#license)
+    - [Features](#features)
+    - [Contributing](#contributing)
+
     ## Installation
-        install node.js, then install inquirer/util pack
-        
+      install node.js, then install inquirer/util pack
+
     ## Usage
-        Creates and ultimately displays a README.md file
-        
-    ## Credit
-        N/A
-        
+      Creates and Displays a README.md file.
+    
+    ## Credits
+      N/A
+
     ## License
-        This application is covered by Mozilla license.
-        
+      This application is covered by Mozilla license.
+
     ## Features
-        Node.js, json, and JavaScript
-        
-    ## Contribution
-        N/A
+      JavaScript, Json, and Node.js
+      
+    ## Contributing
+      undefined
+  
