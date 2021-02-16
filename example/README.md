@@ -4,7 +4,7 @@
   # Description 
     Creates and displays a README.md file
     
-    # Table of Contents
+  # Table of Contents
   - [Description](#description)
   - [Installation](#install)
   - [Usage](#usage)
