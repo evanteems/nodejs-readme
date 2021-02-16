@@ -1,53 +1,33 @@
-# Node.js README Generator
 
-<<<<<<< HEAD
-Node.js README Generator
+  Node.js README.md Generator
     
-# Description 
-  Simply creates and displays a README.md files
+  # Description 
+    Creates and displays a README.md file
     
-=======
->>>>>>> d9ccc2a6e23af492a3b22463a9b940cbb8045831
-# Table of Contents
-- [Description](#description)
-- [Installation](#install)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-- [Features](#features)
-- [Contributing](#contributing)
+    # Table of Contents
+  - [Description](#description)
+  - [Installation](#install)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+  - [Features](#features)
+  - [Contributing](#contributing)
 
-# Installation
-<<<<<<< HEAD
-  install node.js, then install inquirer/ util pack
+  # Installation
+    install node.js, install the inquirer/node_module/util pack
 
-# Usage
-  Creates and displays a README.md file
+  # Usage
+    Simply creating and displaying a README.md file using JavaScript amd node.js
     
-# Credits
-  N/A
+  # Credits
+    N/A
 
-# License
-  This application is covered by Mozilla license.
+  # License
+    This application is covered by Mozilla license.
 
-# Features
-  JavaScript, Json, and node.js
+  # Features
+    JavaScript, json, and node.js
 
-=======
-  install node.js, then install inquirer/util pack
+  # Contributing
+    N/A
   
-# Usage
-  Creates and displays a README.md file
-
-# Credits 
-  N/A
-  
-# License
-  This application is covered by Mozilla license.
-
-# Features
-  JavaScript, Json, and node.js
-  
->>>>>>> d9ccc2a6e23af492a3b22463a9b940cbb8045831
-# Contributing
-  N/A
