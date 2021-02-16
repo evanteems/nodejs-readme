@@ -1,36 +1,36 @@
 function ReadMeTemplate(data) {
-    return `
-    <h1 align='center'>${data.projectTitle}</h1>
+  return `
+  ${data.projectTitle}
     
-    ## Description 
-      ${data.description}
+  # Description 
+    ${data.description}
     
-    ## Table of Contents
-    - [Description](#description)
-    - [Installation](#install)
-    - [Usage](#usage)
-    - [Credits](#credits)
-    - [License](#license)
-    - [Features](#features)
-    - [Contributing](#contributing)
+    # Table of Contents
+  - [Description](#description)
+  - [Installation](#install)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+  - [Features](#features)
+  - [Contributing](#contributing)
 
-    ## Installation
-      ${data.install}
+  # Installation
+    ${data.install}
 
-    ## Usage
-      ${data.usage}
+  # Usage
+    ${data.usage}
     
-    ## Credits
-      ${data.credits}
+  # Credits
+    ${data.credits}
 
-    ## License
-      This application is covered by ${data.license} license.
+  # License
+    This application is covered by ${data.license} license.
 
-    ## Features
-      ${data.features}
+  # Features
+    ${data.features}
 
-    ## Contributing
-      ${data.contributing}
+  # Contributing
+    ${data.contributing}
   `;
 }
   

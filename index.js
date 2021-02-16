@@ -56,7 +56,7 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'contribution',
+            name: 'contributing',
             message: 'If there are any other applications, guidelines or packages that you would to add, feel free to do so. If there arent any, type "N/A":'
         },
     ])
