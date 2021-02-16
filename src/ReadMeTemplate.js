@@ -7,10 +7,10 @@ function ReadMeTemplate(data) {
         
     ## TABLE OF CONTENTS
     - [Description](#description)
-    -[Installation](#install)
-    -[Usage](#usage)
-    -[License](#license)
-    -[Contribution](#contribution)
+    - [Installation](#install)
+    - [Usage](#usage)
+    - [License](#license)
+    - [Contribution](#contribution)
     
     ## Installation
         ${data.install}
@@ -29,7 +29,7 @@ function ReadMeTemplate(data) {
         
     ## Contribution
         ${data.contribution}
-    `;
+`;
 }
 
 module.exports = ReadMeTemplate;
