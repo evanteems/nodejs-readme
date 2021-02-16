@@ -18,5 +18,9 @@
   "homepage": "https://github.com/evanteems/nodejs-readme#readme",
   "dependencies": {
     "inquirer": "^7.3.3"
-  }
+  },
+  "directories": {
+    "example": "example"
+  },
+  "devDependencies": {}
 }

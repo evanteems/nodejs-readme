@@ -8,7 +8,7 @@ const util = require("util");
 const ReadMeTemplate = require("./src/ReadMeTemplate");
 
 //Function that writes the README file
-const createFile = util.promisify(fs.write);
+const createFile = util.promisify(fs.writeFile);
 
 // Creating an array of Questions for the user to input
 const promptUser = () => {
@@ -20,32 +20,32 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'project-title',
+            name: 'projectTitle',
             message: "What is the name of your project title?"
         },
         {
             type: 'input',
-            name: 'Project Description',
+            name: 'description',
             message: 'Please Describe your project:'
         },
         {
             type: 'input',
-            name: 'Install',
+            name: 'install',
             message: 'What are the steps required to install your project?'
         },
         {
             type: 'input',
             name: 'usage',
-            message: 'Provide instruction and examples for usage. Included screenshotsas needed:'
+            message: 'Provide instruction and examples for usage. Included screenshots as needed:'
         },
         {
            type: 'input',
-           name: 'Credit',
+           name: 'credits',
            message: 'Please list all collaborators. If n/a leave blank:' 
         },
         {
             type: 'list',
-            name: 'lisence',
+            name: 'license',
             message: 'Choose the license for your project:',
             choices: ['GNU AGPL', 'GNU LGPL', 'Mozilla', 'Apache', 'MIT', 'Boost Software', 'The Unlicense']
         },
@@ -53,7 +53,12 @@ const promptUser = () => {
             type: 'input',
             name: 'features',
             message: 'Please list your project features/ languages:'
-        }
+        },
+        {
+            type: 'input',
+            name: 'contribution',
+            message: 'If there are any other applications, guidelines or packages that you would to add, feel free to do so. If there arent any, type "N/A":'
+        },
     ])
 };
 

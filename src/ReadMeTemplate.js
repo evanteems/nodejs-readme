@@ -2,19 +2,18 @@ function ReadMeTemplate(data) {
     return `
     <h1 align='center'>${data.projectTitle}</h1>
     
-    ##DESCRIPTION
+    ## Description
         ${data.description}
         
     ## TABLE OF CONTENTS
     - [Description](#description)
-    -[Installation](#installation)
+    -[Installation](#install)
     -[Usage](#usage)
     -[License](#license)
-    -[Contribution](#contributing)
-    -[Tests](#tests)
+    -[Contribution](#contribution)
     
     ## Installation
-        ${data.installation}
+        ${data.install}
         
     ## Usage
         ${data.usage}
@@ -25,14 +24,11 @@ function ReadMeTemplate(data) {
     ## License
         This application is covered by ${data.license} license.
         
-    ## Badges
-    
     ## Features
         ${data.features}
         
     ## Contribution
-        ${data.contributing}
-    
+        ${data.contribution}
     `;
 }
 
