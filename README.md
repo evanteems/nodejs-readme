@@ -25,5 +25,5 @@
   JavaScript, Json, and node.js
   
 # Contributing
-  N/A
+  Evan Teems
 

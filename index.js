@@ -2,17 +2,14 @@ const inquirer = require("inquirer");
 
 const fs = require("fs");
 
-const util = require("util");
-
 // README template links here
-const ReadMeTemplate = require("./src/ReadMeTemplate");
+const generateMarkdown = require('./utils/generateMarkdown');
 
 //Function that writes the README file
-const createFile = util.promisify(fs.writeFile);
+const Choice = require('inquirer/lib/objects/choice');
 
 // Creating an array of Questions for the user to input
-const promptUser = () => {
-    return inquirer.prompt([
+const questions = [
         {
             type: 'input',
             name: 'Username',
@@ -20,7 +17,7 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'projectTitle',
+            name: 'title',
             message: "What is the name of your project title?"
         },
         {
@@ -30,7 +27,7 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'install',
+            name: 'installation',
             message: 'What are the steps required to install your project?'
         },
         {
@@ -39,41 +36,64 @@ const promptUser = () => {
             message: 'Provide instruction and examples for usage. Included screenshots as needed:'
         },
         {
-           type: 'input',
-           name: 'credits',
-           message: 'Please list all collaborators. If n/a leave blank:' 
-        },
-        {
             type: 'list',
-            name: 'license',
+            name: 'licenseBadge',
             message: 'Choose the license for your project:',
-            choices: ['GNU AGPL', 'GNU LGPL', 'Mozilla', 'Apache', 'MIT', 'Boost Software', 'The Unlicense']
-        },
-        {
-            type: 'input',
-            name: 'features',
-            message: 'Please list your project features/ languages:'
+            choices: ["Apache", "GNU", "MIT License"]
         },
         {
             type: 'input',
             name: 'contributing',
             message: 'If there are any other applications, guidelines or packages that you would to add, feel free to do so. If there arent any, type "N/A":'
         },
-    ])
+        {
+            type: 'input',
+            name: 'tests',
+            message: "Give specai; instructions for testing your project."
+        },
+        {
+            type: 'input',
+            name: 'questions',
+            message: "Please enter your Github username so that others may contact you with questions regarding your project!"
+        }
+];
+
+const promptUser = () => {
+    return inquirer
+        .prompt(questions)
+        .then(answers => {
+            return answers;
+        })
+        .catch(err => {
+            console.log(err);
+            console.log('Error');
+        });
+};
+
+
+const writeFile = readmeContent => {
+    return new Promise((resolve, reject) => {
+        fs.writeFile('./dist/README.md', readmeContent, err => {
+            if (err) {
+                reject(err);
+                return;
+            }
+
+            resolve({
+                ok: true,
+                message: "File has been successfully created! Please check the 'dist' folder for your custom README.md file!!"
+            });
+        });
+    });
 };
 
 
 // Create a function to initalize the application
-async function init() {
-    try {
-        const data = await promptUser();
-        const createContent = ReadMeTemplate(data);
-
-        await createFile('./example/README.md', createContent);
-        console.log('README.md successfully created');
-    } catch(err) {
-        console.log(err);
-    }
+function init() {
+    promptUser()
+    .then(readmeContent => {
+        writeFile(generateMarkdown(readmeContent));
+    });
 };
 
 
